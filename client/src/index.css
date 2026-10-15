@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-paper text-ink font-body antialiased; }
+  ::selection { @apply bg-iris text-white; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0D14; }
+  ::-webkit-scrollbar-thumb { background: #232A3D; border-radius: 8px; border: 2px solid #0A0D14; }
+  ::-webkit-scrollbar-thumb:hover { background: #2E3752; }
+}
+
+@layer components {
+  .input { @apply w-full rounded-lg border border-line bg-panel2 px-3.5 py-2.5 text-sm text-ink outline-none transition-all placeholder:text-mute/60 focus:border-iris focus:ring-2 focus:ring-iris/25; }
+  .label { @apply mb-1.5 block font-mono text-[10px] uppercase tracking-[0.18em] text-mute; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-iris to-cobalt px-4 py-2.5 text-sm font-semibold text-white shadow-glow-sm transition-all hover:shadow-glow hover:brightness-110 active:brightness-95 disabled:opacity-50 disabled:shadow-none; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-panel px-4 py-2.5 text-sm font-medium text-ink transition-colors hover:border-iris/60 hover:text-white disabled:opacity-50; }
+  .btn-ink { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-iris to-cobalt px-4 py-2.5 text-sm font-semibold text-white shadow-glow-sm transition-all hover:shadow-glow hover:brightness-110 disabled:opacity-50; }
+  .card { @apply rounded-2xl border border-line bg-panel; }
+}
+
+@keyframes toastin { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+.toast-in { animation: toastin .25s ease both; }
+@keyframes rise { from { transform: translateY(10px); opacity: 0; } to { transform: none; opacity: 1; } }
+.rise { animation: rise .4s ease both; }
+@keyframes scanline { 0% { transform: translateX(-130%); } 100% { transform: translateX(340%); } }
+.scanline { animation: scanline 1.2s linear infinite; }
+@keyframes floaty { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(26px,-20px) scale(1.07); } }
+.floaty { animation: floaty 9s ease-in-out infinite; }
+.floaty-slow { animation: floaty 15s ease-in-out infinite reverse; }
+.dotgrid { background-image: radial-gradient(rgba(233,237,246,0.07) 1px, transparent 1px); background-size: 22px 22px; }
