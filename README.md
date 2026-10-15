@@ -1,7 +1,7 @@
 RELAY — Customer Support Intelligence Portal
 Full-stack customer support platform with role-based dashboards, live ticket triage,escalation workflows, and interactive analytics.
 
-Live demo: https://customer-support-portal.onrender.com · 
+Live demo: https://customer-support-portal.onrender.com
 <img width="1910" height="962" alt="lc" src="https://github.com/user-attachments/assets/b4fb79a4-47f0-46f8-a39c-96b40a086070" />
 <img width="1912" height="905" alt="rd" src="https://github.com/user-attachments/assets/c1f39b9b-64ec-4426-b301-6038464e27b7" />
 <img width="1912" height="897" alt="rrd" src="https://github.com/user-attachments/assets/9e1a12b7-745d-4775-84ea-edab6e292e19" />
